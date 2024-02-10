@@ -1,0 +1,145 @@
+*{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body{
+    font-family: Montserrat, sans-serif;
+}
+
+.sec1{
+    min-height: 100vh;
+    min-height: 100svh;
+    background-image: url(images/pexels-tatiana-syrikova-3968175.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .sec1 .titre{
+    font-size: 65px;
+    font-weight: 800;
+} */
+
+.sec1 .background{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+}
+
+.sec1 .logo{
+    width: 250px;
+}
+
+.navbar img{
+    width: 100px;
+}
+
+.navbar{
+    z-index: 9;
+    position: absolute;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.navbar .nav-links ul{
+    display: flex;
+}
+
+.navbar .nav-links ul li{
+    margin: 0 35px;
+    transition: 0.2s;
+}
+
+.navbar .nav-links ul li a{
+    color: #06202b;
+}
+
+.navbar ul li:hover{
+    transform: scale(1.10);
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+
+.navbar .menu-burger{
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 35px;
+}
+
+
+/* RESPONSIVE */
+@media screen and (max-width: 700px) {
+    .navbar{
+        padding: 0;
+    }
+    
+    .navbar .menu-burger{
+        display: block;
+    }
+    
+    .nav-links{
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.799);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(3px);
+        margin-left: -100%;
+        transition: 0.5s;
+    }
+    
+    .nav-links.mobile-menu{
+        margin-left: 0;
+    }
+    
+    
+    .nav-links ul{
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .navbar .nav-links ul li{
+        margin: 25px 0;
+        font-size: 1.2em;
+    }
+    
+    .navbar .nav-links ul li a{
+        color: white;
+    }
+}
+
+
+/* SECTION 2 */
+
+
+#service div.title{
+    text-align: center;
+}
+
+#service div.title h6{
+    color: #06202b;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+#service div.title h3{
+    font-size: 1.5em;
+    font-weight: 600;
+}

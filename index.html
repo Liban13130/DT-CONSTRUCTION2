@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FONT FAMILY -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <title>DT - Construction</title>
+</head>
+<body>
+
+                                                        <!-- Accueil -->
+    <nav class="navbar">
+        <div class="nav-links">
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Projets réalisés</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <img src="images/menu-burger.png" alt="Menu hamburger" class="menu-burger">
+    </nav>
+    <section class="sec1">
+        <img class="logo" src="images/logo.png" alt="">
+    </section>
+
+                                                        <!-- Services -->
+        <section id="service">
+            <div class="container">
+                <div>
+                    <div class="title">
+                        <h6>NOS SERVICES</h6>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    <script>
+        const menuHamburger = document.querySelector(".menu- burger")
+        const navLinks = document.querySelector(".nav-links")
+ 
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+</script>
+</body>
+</html>
+
+<!-- Maçonnerie générale / Carrelage / Façade / Rénovation / Terrassement -->
