@@ -13,7 +13,7 @@ body{
 .sec1{
     min-height: 100vh;
     min-height: 100svh;
-    background-image: url(images/pexels-tatiana-syrikova-3968175.jpg);
+    background-image: url(images/istoke.jpg);
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -33,7 +33,7 @@ body{
 }
 
 .sec1 .logo{
-    width: 250px;
+    width: 500px;
 }
 
 .navbar img{
@@ -304,7 +304,7 @@ body{
 
 
 .footer-distributed{
-    background: #666;
+    background: #05202b;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
     box-sizing: border-box;
     width: 100%;
@@ -488,3 +488,32 @@ body{
     }
   
   }
+
+
+  /*
+   LOGO PAGE ACCUEIL PLUS GROS  
+   PAGE ACCUEIL FAIRE UN EFFET DE ZOOM SUR LE BACKGROUND
+   FOOTER COULEUR BLEU
+   LOGO BLANC
+   REMPLACER LES ICONES
+   ENCERCLé LES ICONES TEL MAIL ADRESSE
+   RETIRER LOGO SNAP
+   inversé les couleurs de fond en hover les cards
+
+
+   NOS SERVICES
+   POUR CHAQUE SERVICE UNE PHOTO avec L'EFFET INVERSE A CHAQUE LIGNE
+    NOS PROJETS REALISER :
+    PAGE LONGUE 3 IMAGES PAR LIGNES + DESCRIPTION
+    PAGE GALLERIE A LA PLACE DE PROJET REALISE
+    3 PAR LIGNES avec DESCRIPTION + ZOOM AU HOVER ET CLIQUE POUR AGRANDIR
+
+    PAGE CONTACT :
+    FAIRE COMME DANS LIVE MAIS REMPLACER LES CARRE PAR DES RECTANGLES 
+
+
+   FOOTER
+   LOGO BLANC
+   AJOUTER N°SIRET EN BAS DU LOGO
+
+  */
