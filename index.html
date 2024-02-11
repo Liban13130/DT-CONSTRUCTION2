@@ -6,6 +6,10 @@
 
     <!-- LINK CSS -->
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 
     <!-- FONT FAMILY -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -93,12 +97,14 @@
 
 
     <script>
+
         const menuHamburger = document.querySelector(".menu-burger")
         const navLinks = document.querySelector(".nav-links")
  
         menuHamburger.addEventListener('click',()=>{
         navLinks.classList.toggle('mobile-menu')
         })
+        AOS.init();
 </script>
 </body>
 </html>
