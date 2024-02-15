@@ -169,7 +169,7 @@ body{
 #service .container .block-right{
   position: relative;
   text-align: center;
-  width: 50%;
+  width: 700px;
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
@@ -196,14 +196,32 @@ body{
 
 /* RESPONSIVE */
 
-@media screen and (max-width: 1316px) {
-  #service .container .block-right p{
-    padding: 0 0;
+@media screen and (max-width: 1389px) {
+  #service .container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  #service .container img{
+    margin: 0 0; 
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  #service .container img{
+    margin: 0 0; 
+    width: 400px;
   }
 
-  #service .container img{
-    margin: 0;
+  .sec1 img.logo{
+    width: 400px;
   }
+
+  
+#service .container .block-right p{
+  padding: 10px 50px;
+}
 }
 
 
