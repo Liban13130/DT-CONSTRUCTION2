@@ -3,6 +3,8 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    /* overflow: hidden; */
+    /* box-sizing: border-box; */
 }
 
 body{
@@ -19,20 +21,24 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+    /* transition: 5s ease-in-out; */
 }
+
+
+/* 
+.sec1:hover{
+  transform: scale(1.80);
+} */
 
 /* .sec1 .titre{
     font-size: 65px;
     font-weight: 800;
 } */
 
-.sec1 .background{
-    position: absolute;
-    height: 100vh;
-    width: 100%;
-}
 
-.sec1 .logo{
+.sec1 img.logo{
     width: 500px;
 }
 
@@ -152,52 +158,52 @@ body{
 #service .container{
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: space-evenly;
     margin: 0 auto;
     max-width: 1400px;
-    padding: 100px 0;
+    padding: 100px 20px;
 }
 
-#service .card{
-    position: relative;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 500px;
-    min-height: 150px;
-    margin: 30px 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 45px -10px #d2d2d2;
-    padding: 15px;
-    box-sizing: border-box;
-    transition: 0.3s;
-    color: #06202b;
-    cursor: pointer;
+
+#service .container .block-right{
+  position: relative;
+  text-align: center;
+  width: 50%;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 15px 0;
 }
 
-#service .card:hover{
-    transform: translateY(-10px);
+#service .container .block-right:hover{
+  background-color: #05202b;
+  color: white;
+  transform: translateY(-5px);
 }
 
-#service .card::before{
-    position: absolute;
-    content: "";
-    height: 5px;
-    background-color: #06202b;
-    bottom: 0;
-    left: 0;
-    right: 100%;
-    border-radius: 20px;
-    transition: 0.4s;
+
+#service .container .block-right p{
+  padding: 10px 50px;
 }
 
-#service .card:hover::before{
-    right: 0%;
+#service .container img{
+  margin: 0 25px;
+  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+  border-radius: 10px;
+  width: 600px;
 }
 
-#service .card h4{
-    margin: 0px 0 7px 0;
+/* RESPONSIVE */
+
+@media screen and (max-width: 1316px) {
+  #service .container .block-right p{
+    padding: 0 0;
+  }
+
+  #service .container img{
+    margin: 0;
+  }
 }
 
 
