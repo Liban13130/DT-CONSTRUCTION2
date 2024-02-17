@@ -130,7 +130,7 @@ body{
 /* SECTION 2 */
 
 .sec2{
-  background-color: #bdbdbd;
+  background-color: #d4d4d4;
 }
 
 .sec2 img{
@@ -382,10 +382,52 @@ body{
 
 
 
-/* SECTION 3 */
+/* SECTION 3 INFORMATIONS */
+#infos .container{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 100px 20px;
+  flex-wrap: wrap;
+}
+
+#infos .container .bloc{
+  text-align: center;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 10px 0 0;
+  background-image: linear-gradient(to right bottom, #05202b, #042938, #033346, #013d55, #004764);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#infos .container .bloc:hover{
+  transform: rotate(-8deg);
+  background-image: linear-gradient(to left top, #05202b, #042938, #033346, #013d55, #004764);
+  box-shadow: 0 65px 90px -55px #565656;
+}
+
+#infos .container .bloc span{
+  font-size: 3em;
+}
+
+#infos .container .bloc h3{
+  font-size: 1.5em;
+  margin: 30px 0 15px 0;
+}
 
 
-
+#infos .container .bloc span,
+#infos .container .bloc h3,
+#infos .container .bloc p{
+  color:white;
+}
 
 
 
