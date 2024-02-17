@@ -147,15 +147,41 @@ body{
   font-size: 2.5em;
 }
 
+.sec2 h1{
+  margin-bottom: 100px;
+}
+
+.sec2 p{
+  max-width: 600px;
+  line-break: anywhere;
+}
+
 .sec2 .container{
   max-width: 1500px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.first, .second, .third, .fourth, .fifth{
-  display: flex;  
-  flex-direction: row;
-  align-items: center;
+.sec2 .first .right{
+  max-width: 700px;
+}
+
+.sec2 .second .left{
+  max-width: 700px;
+}
+
+.sec2 .third .right{
+  max-width: 700px;
+}
+
+.sec2 .fourth .left{
+  max-width: 700px;
+}
+
+.sec2 .fifth .right{
+  max-width: 700px;
 }
 
 .sec2 .title{
@@ -164,104 +190,56 @@ body{
   color: #05202b;
 }
 
+.content{
+  width: 100%;
+  display: flex;  
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.first, 
+.second, 
+.third, 
+.fourth, 
+.fifth{
+
+}
+
+
+
 /* SECTION 3 */
 
-.projet{
-    padding: 100px 0;
-    background-color: #e7e7e7;
-}
 
-.projet .title h6{
-    display: flex;
-    justify-content: center;
-    padding: 50px 0;
-    color: #06202b;
-    font-size: 2em;
-    font-weight: 600;
-}
 
-.projet .card{
-    margin: 50px 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-}
 
-.projet .container{
-    padding: 2em;
-}
 
-.projet .slider-wrapper{
-    position: relative;
-    max-width: 48em;
-    margin: 0 auto;
 
-}
 
-.slider{
-    display: flex;
-    aspect-ratio: 16 / 9;
-    overflow: hidden;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
-    border-radius: 0.5rem;
-}
 
-.slider img{
-    animation: slide 18s infinite ease-in-out;
-    flex: 1 0 100%;
-    scroll-snap-align: start;
-    object-fit: cover;
-}
 
-.slider-nav{
-    display: flex;
-    column-gap: 1rem;
-    position: absolute;
-    bottom: 1.25rem;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-}
 
-.slider-nav a{
-    width: 0.5rem;
-    height: 0.5rem;
-    border-radius: 50%;
-    background-color: #e7e7e7;
-    opacity: 0.75;
-    transition: opacity ease 250ms;
-}
 
-.slider-nav a:hover{
-    background-color: #06202b;
-    opacity: 1;
-}
 
-@keyframes slide{
-    0%,
-    20%{
-        transform: translateX(0);
-    }
-    25%,
-    45%{
-        transform: translateX(-100%);
-    }
-    50%,
-    70%{
-        transform: translateX(-200%);
-    }
-    75%,
-    95%{
-        transform: translateX(-300%);
-    }
-    100%{
-        transform: translateX(-400%);
-    }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* FOOTER */
 
