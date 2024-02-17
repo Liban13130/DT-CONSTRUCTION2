@@ -28,6 +28,7 @@ body{
 
 .navbar img{
     width: 100px;
+    cursor: pointer;
 }
 
 .navbar{
@@ -35,7 +36,7 @@ body{
     position: absolute;
     padding: 50px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     box-sizing: border-box;
@@ -130,7 +131,7 @@ body{
 /* SECTION 2 */
 
 .sec2{
-  background-color: #d4d4d4;
+  background-color: #ffffff;
 }
 
 .sec2 img{
