@@ -37,7 +37,7 @@ body{
     position: absolute;
     padding: 50px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 100%;
     box-sizing: border-box;
@@ -48,8 +48,9 @@ body{
   }
   
   .navbar .nav-links ul li{
-    margin: 0 35px;
+    margin: 0 70px;
     transition: 0.2s;
+    font-size: 20px;
   }
   
   .navbar .nav-links ul li a{
@@ -401,9 +402,10 @@ body{
 }
 
 #infos .container .bloc{
+  overflow: hidden;
   text-align: center;
-  width: 300px;
-  height: 300px;
+  width: 380px;
+  height: 250px;
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -611,7 +613,12 @@ body{
     margin-top: 25px;
   }
   
-  .footer-distributed .footer-icons a{
+  .footer-distributed .footer-icons img{
+    width: 30px;
+    margin-right: 5px;
+  }
+  
+  /* .footer-distributed .footer-icons a{
     display: inline-block;
     width: 35px;
     height: 35px;
@@ -626,7 +633,7 @@ body{
   
     margin-right: 3px;
     margin-bottom: 5px;
-  }
+  } */
 
   .footer-left img{
     width: 150px;
@@ -682,5 +689,12 @@ body{
    FOOTER
    LOGO BLANC
    AJOUTER N°SIRET EN BAS DU LOGO
+
+   DT CONSTRUCTION EN BAS AU MILIEU
+   RISE up en bas a gauche
+   A propos
+   Icone plus fine
+   Icone calendrier a la place de l'horlhoge
+
 
   */
