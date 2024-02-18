@@ -3,11 +3,12 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 
 body{
     scroll-behavior: smooth;
-    font-family: Montserrat, sans-serif;
+    font-family: 'Commuters Sans';
 }
 
 .sec1{
@@ -147,10 +148,15 @@ body{
 
 .sec2 h2{
   font-size: 2.5em;
+  font-weight: 300;
+  text-transform: uppercase;
 }
 
-.sec2 h1{
+.sec2 .title{
+  display: flex;
+  justify-content: center;
   margin-bottom: 100px;
+  text-transform: uppercase;
 }
 
 .sec2 p{
@@ -403,14 +409,14 @@ body{
   align-items: center;
   justify-content: center;
   margin: 30px 10px 0 0;
-  background-image: linear-gradient(to right bottom, #05202b, #042938, #033346, #013d55, #004764);
+  background-color: #05202b;
   transition: 0.3s;
   cursor: pointer;
 }
 
 #infos .container .bloc:hover{
   transform: translateY(-8px);
-  background-image: linear-gradient(to left top, #05202b, #042938, #033346, #013d55, #004764);
+  background-color: linear-gradient(to left top, #05202b, #042938, #033346, #013d55, #004764);
   box-shadow: 0 65px 90px -55px #565656;
 }
 
@@ -669,6 +675,7 @@ body{
     3 PAR LIGNES avec DESCRIPTION + ZOOM AU HOVER ET CLIQUE POUR AGRANDIR
 
     PAGE CONTACT :
+
     FAIRE COMME DANS LIVE MAIS REMPLACER LES CARRE PAR DES RECTANGLES 
 
 
