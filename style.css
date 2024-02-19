@@ -86,7 +86,7 @@ body{
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 945px) {
     .navbar{
         padding: 0;
     }
@@ -155,11 +155,15 @@ body{
   align-items: center;
 }
 
-.sec2 .container .content:hover img{
-  fill: red;
-  background-color: rgb(255, 255, 255);
-  border-radius: 10px;
+.sec2 .container .content svg{
+  fill: #05202b;
+  transition: 0.4s;
 }
+
+.sec2 .container .content:hover svg{
+  fill: rgb(255, 255, 255);
+}
+
 
 .sec2 .container .content{
   margin: 70px 10px;
@@ -176,7 +180,7 @@ body{
   height: 200px;
   width: 500px;
   border-radius: 10px;
-  box-shadow: 0 0 35px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 65px 90px -55px #565656;
   transition: 0.4s;
 }
 
@@ -186,11 +190,15 @@ body{
 }
 
 .sec2 .container .content .texte{
-  margin-top: 15px;
   max-width: 90%;
 }
 
-
+/* RESPONSIVE */
+@media screen and (max-width: 660px){
+.sec2 .container .content{
+  width: 80%;
+}
+}
 
 
 
@@ -252,8 +260,8 @@ body{
 #infos .container .bloc{
   overflow: hidden;
   text-align: center;
-  width: 380px;
-  height: 250px;
+  width: 450px;
+  height: 230px;
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -323,7 +331,7 @@ footer{
   padding-top: 20px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   color: white;
   background-color: #05202b;
