@@ -47,10 +47,167 @@
 
 
 
-<!-- Services -->
-            
-<section id="service" class="sec2">
-    <h1 class="title">Nos services</h1>
+<!-- SERVICES -->
+            <div class="sec2">
+                
+                <div class="container">
+                    <div class="card">
+                        <div class="front carrelage">
+                        </div>
+                        <div class="back">
+                            <h1>Carrelage</h1>
+                            <p>Pose experte de carrelage intérieur et extérieur, rénovation et création sur mesure. Qualité garantie.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="card">
+                        <div class="front maconnerie">
+                        </div>
+                        <div class="back">
+                            <h1>Maçonnerie générale</h1>
+                            <p>Maçonnerie générale de qualité : construction, rénovation, et aménagements sur mesure pour votre projet idéal.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="card">
+                        <div class="front terrassement">
+                        </div>
+                        <div class="back">
+                            <h1>Terrassement</h1>
+                            <p>Experts en terrassement : préparation de terrain, nivellement, creusage et construction de fondations solides pour tous types de projets</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="card">
+                        <div class="front renovation">
+                        </div>
+                        <div class="back">
+                            <h1>Rénovation</h1>
+                            <p>Service de rénovation complète : amélioration de l'habitat, modernisation, et restauration de qualité supérieure.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="card">
+                        <div class="front facade">
+                        </div>
+                        <div class="back">
+                            <h1>Façade</h1>
+                            <p>Spécialistes façade : nettoyage, réparation, peinture, ravalement et embellissement pour une maison à l'aspect neuf et durable.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+<!-- A PROPOS -->
+<section id="about" class="sec3">
+    <div class="container">
+        <p class="title">Qui sommes nous ?</p>
+        <img src="images/DT-Construction-oui.png" alt="">
+        <p class="texte">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sequi fugit architecto nisi exercitationem doloremque, 
+            nihil consequuntur voluptas dolorem? Laboriosam
+             eius quidem magni eaque cumque quae dignissimos vitae fugiat, assumenda alias tenetur ducimus dolorum accusantium!
+            </p>
+        <a href="mailto:"><button>Contactez nous</button></a>
+    </div>
+</section>
+
+
+
+
+<!-- CONTACT -->
+        <section id="infos">
+            <div class="container">
+                <div class="bloc" data-aos="fade-up">
+                    <div>
+                        <div>
+                            <span><img src="images/icons8-phone-50.png" alt=""></span>
+                        </div>
+                        <div>
+                            <h3>Téléphone</h3>
+                            <p>07 81 10 25 32</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bloc" data-aos="fade-down">
+                    <div>
+                        <div>
+                            <span><img src="images/icons8-calendar-50.png" alt=""></span>
+                        </div>
+                        <div>
+                            <h3>Horaires</h3>
+                            <p>Lundi - Vendredi : 07:00 - 22:00</p>
+                            <p>Week-end : 6:00 - 18:00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bloc" data-aos="fade-up">
+                    <a href="mailto:">
+                        <div>
+                            <div>
+                                <span><img src="images/icons8-envelope-50.png" alt=""></span>
+                            </div>
+                            <div>
+                                <h3>Contact</h3>
+                                    <p>Contactez nous en cliquant ici</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+                                                            <!-- FOOTER -->
+
+        <footer>
+            <p class="slogan">&copyRise up Communication 2024</p>
+            <div class="bloc center">
+                <img class="logo" src="images/DT Construction Blanc.png" alt="">
+                <ul>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li id="li-deux"><a href="#service">Service</a></li>
+                    <li><a href="gallerie.html">Gallerie</a></li>
+                    <li><a href="#about">Qui sommes nous</a></li>
+                </ul>
+                <div class="icon">
+                    <img src="images/social-media.png" alt="">
+                    <img src="images/icons8-instagram-50.png" alt="">
+                </div>
+                
+            </div> 
+        </footer>
+
+
+
+    <script>
+
+        const menuHamburger = document.querySelector(".menu-burger")
+        const navLinks = document.querySelector(".nav-links")
+ 
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+        AOS.init();
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<!-- 
+    <section id="service" class="sec2">
+    <h1 class="title">NOS SERVICES</h1>
     
     <div class="container">
         <div class="content carrelage">
@@ -105,109 +262,7 @@
     </div>
 
 </section>
-
-<!-- A PROPOS -->
-<section id="about" class="sec3">
-    <div class="container">
-        <p class="title">Qui sommes nous ?</p>
-        <img src="images/DT-Construction-oui.png" alt="">
-        <p class="texte">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sequi fugit architecto nisi exercitationem doloremque, 
-            nihil consequuntur voluptas dolorem? Laboriosam
-             eius quidem magni eaque cumque quae dignissimos vitae fugiat, assumenda alias tenetur ducimus dolorum accusantium!
-            </p>
-        <a href="mailto:"><button>Contactez nous</button></a>
-    </div>
-</section>
-
-
-
-
-<!-- CONTACT -->
-        <section id="infos">
-            <div class="container">
-                <div class="bloc" data-aos="fade-up">
-                    <div>
-                        <div>
-                            <span><img src="images/icons8-phone-50.png" alt=""></span>
-                        </div>
-                        <div>
-                            <h3>Téléphone</h3>
-                            <p>07 81 10 25 32</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="bloc" data-aos="fade-down">
-                    <div>
-                        <div>
-                            <span><img src="images/icons8-calendar-50.png" alt=""></span>
-                        </div>
-                        <div>
-                            <h3>Horaires</h3>
-                            <p>Lundi - Vendredi : 07:00 - 22:00</p>
-                            <p>Week-end : 6:00 - 18:00</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="bloc" data-aos="fade-up">
-                    <div>
-                        <div>
-                            <span><img src="images/icons8-envelope-50.png" alt=""></span>
-                        </div>
-                        <div>
-                            <h3>Contact</h3>
-                                <a style="color: white;" href="mailto:nabil-13130@hotmail.fr">Envoyez nous un mail en cliquant <a href="mailto:"></a>ici</a>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-                                                            <!-- FOOTER -->
-
-        <footer>
-            <p class="slogan">&copyRise up Communication 2024</p>
-            <div class="bloc center">
-                <img class="logo" src="images/DT Construction Blanc.png" alt="">
-                <ul>
-                    <li><a href="#accueil">Accueil</a></li>
-                    <li id="li-deux"><a href="#service">Service</a></li>
-                    <li><a href="gallerie.html">Gallerie</a></li>
-                    <li><a href="#about">Qui sommes nous</a></li>
-                </ul>
-                <div class="icon">
-                    <img src="images/icons8-facebook-50.png" alt="">
-                    <img src="images/icons8-instagram-50.png" alt="">
-                </div>
-                
-            </div> 
-        </footer>
-
-
-
-    <script>
-
-        const menuHamburger = document.querySelector(".menu-burger")
-        const navLinks = document.querySelector(".nav-links")
- 
-        menuHamburger.addEventListener('click',()=>{
-        navLinks.classList.toggle('mobile-menu')
-        })
-        AOS.init();
-</script>
-</body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
+ -->
 
 
 
