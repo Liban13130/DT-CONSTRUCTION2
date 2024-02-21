@@ -269,12 +269,15 @@ footer .right img{
 @media screen and (max-width: 620px){
   footer .center ul li {
     margin: 0 15px;
-    transition: 0.3s;
   }
 }
 
-
-
+@media screen and (max-width: 500px){
+  footer .center ul li {
+    margin: 0 16px;
+    font-size: 13px;
+  }
+}
 
 
 

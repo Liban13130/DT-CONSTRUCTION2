@@ -354,6 +354,7 @@ body{
 
 .sec3 .container .title{
   font-size: 3em;
+  text-align: center;
 }
 
 .sec3 .container{
@@ -367,6 +368,7 @@ body{
   width: 700px;
   line-height: 28px;
   padding: 50px 0;
+  text-align: center;
 }
 
 .sec3 .container button{
@@ -394,6 +396,28 @@ body{
   transform: translateY(-5px);
   color: #ffffff;
   background-color: #05202b;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 820px){
+  .sec3 .container .texte{
+    width: 90%;
+
+  }
+}
+
+@media screen and (max-width: 570px){
+  .sec3 .container .title {
+    font-size: 2.1em;
+    text-align: center;
+}
+}
+
+@media screen and (max-width: 410px){
+  .sec3 .container .title {
+    font-size: 1.9em;
+    text-align: center;
+}
 }
 
 
@@ -489,6 +513,28 @@ footer .right img{
   cursor: pointer;
   width: 30px;
 }
+
+/* RESPONSIVE */
+@media screen and (max-width: 930px){
+  footer img.logo{
+    width: 200px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 620px){
+  footer .center ul li {
+    margin: 0 15px;
+  }
+}
+
+@media screen and (max-width: 500px){
+  footer .center ul li {
+    margin: 0 16px;
+    font-size: 13px;
+  }
+}
+
 
 
 
