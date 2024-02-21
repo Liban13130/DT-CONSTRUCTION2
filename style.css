@@ -542,6 +542,14 @@ footer .right img{
   }
 }
 
+/* POUR LE "QUI QOMME NOUS */
+/* @media screen and (max-width: 400px){
+  footer .center ul li {
+    margin: 0 14px;
+    font-size: 11px;
+  }
+} */
+
 
 
 
