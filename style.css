@@ -21,7 +21,7 @@ body{
 
 .sec1{
     min-height: 100vh;
-    min-height: 100svh;
+    height: -webkit-fill-available-;
     background-image: url(images/istoke.jpg);
     background-size: cover;
     display: flex;
