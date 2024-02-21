@@ -160,7 +160,6 @@ a{
 .gallery img{
   overflow: hidden;
   object-fit: cover;
-  z-index: 0;
   position: relative;
   width: 100%;
   border-radius: 10px;
@@ -175,16 +174,6 @@ a{
   margin: 0 0 30px 0;
   font-size: 1.2em;
 }
-
-.gallery img::before{
-  position: absolute;
-  content: "feeeffefefffe";
-  color: antiquewhite;
-  display: block;
-  background-color: #05202b;
-  z-index: 989;
-}
-
 
 
 /* FOOTER */
