@@ -99,10 +99,10 @@ header{
   .navigation .menu-liste{
     position: fixed;
     top: 0;
-    left: -100%;
+    left: -150%;
     background: #222;
     height: 100vh;
-    width: 100vh;
+    width: 100%;
     max-width: 400px;
     display: block;
     padding: 40px 0;
@@ -129,6 +129,15 @@ header{
     justify-content: flex-end;
 }
 }
+@media screen and (max-width: 600px){
+  .contenu{
+    width: 0;
+    margin: auto;
+    padding: 0;
+  }
+}
+
+
 
 /* GALLERIE */
 /* body {
@@ -276,6 +285,13 @@ footer .right img{
   footer .center ul li {
     margin: 0 16px;
     font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 280px){
+  footer .center ul li {
+    margin: 0 8px;
+    font-size: 12px;
   }
 }
 
