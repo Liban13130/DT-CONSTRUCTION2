@@ -5,15 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- LINK CSS -->
-    <link rel="stylesheet" href="style.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- FONT-AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="font/stylesheet.css">
-
+    <!-- FONTHUB COMMUTERS -->
+    
+    <!-- ANIMATE ON SCROLL -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link type="image/png" sizes="96x96" rel="icon" href=".../icons8-ceramic-tile-96.png">
-
-
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="font/stylesheet.css">
+    <link rel="stylesheet" href="style.css">
+    
     <!-- FONT FAMILY -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,10 +29,26 @@
     <title>DT - Construction</title>
 </head>
 <body>
-
-                                                        <!-- Accueil -->
-    <nav class="navbar">
-        <!-- <img src="images/DT Construction Blanc.png" alt=""> -->
+    <!-- NAVBAR -->
+    <nav class="navigation">
+        
+            <!-- <div class="logo"><a href="#">DT Construction</a></div> -->
+            <ul class="menu-liste">
+                <div class="icon cancel-btn">
+                    <i class="fas fa-times"></i>
+                </div>
+                <li><a class="li" href="#accueil">Accueil</a></li>
+                <li><a class="li" href="#service">Services</a></li>
+                <li><a class="li" href="gallerie.html">Gallerie</a></li>
+                <li><a class="li" href="#infos">Contact</a></li>
+            </ul>
+            <div class="icon menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        
+    </nav>
+    
+    <!-- <nav class="navbar">
         <div class="nav-links">
             <ul>
                 <li><a href="#accueil">Accueil</a></li>
@@ -38,7 +58,9 @@
             </ul>
         </div>
         <img src="images/menu-burger.png" alt="Menu hamburger" class="menu-burger">
-    </nav>
+    </nav> -->
+    
+    <!-- Accueil -->
     <section id="accueil" class="sec1">
         <img class="logo" src="images/DT Construction Blanc.png" alt="">
     </section>
@@ -187,12 +209,43 @@
 
     <script>
 
-        const menuHamburger = document.querySelector(".menu-burger")
-        const navLinks = document.querySelector(".nav-links")
+        const body = document.querySelector("body");
+        const liste = document.querySelectorAll("a.li")
+        const navigation = document.querySelector(".navigation");
+        const menu = document.querySelector(".menu-liste");
+        const menuBtn = document.querySelector(".menu-btn");
+        const cancelBtn = document.querySelector(".cancel-btn");
+
+        menuBtn.onclick = () => {
+            menu.classList.add("active");
+            menuBtn.classList.add("hide");
+            body.classList.add("disabledScroll");
+        }
+
+        cancelBtn.onclick = () => {
+            menu.classList.remove("active");
+            menuBtn.classList.remove("hide");
+            body.classList.remove("disabledScroll");
+        }
+
+        window.onscroll = () => {
+            if(this.scrollY > 20){
+                navigation.classList.add("sticky")
+                liste.style.color = "white"
+            }else{
+                navigation.classList.remove("sticky");
+                liste.style.color = "#05202b"
+
+            }
+            // this.scrollY > 20 ? navigation.classList.add("sticky") : navigation.classList.remove("sticky");
+        }
+
+        // const menuHamburger = document.querySelector(".menu-burger")
+        // const navLinks = document.querySelector(".nav-links")
  
-        menuHamburger.addEventListener('click',()=>{
-        navLinks.classList.toggle('mobile-menu')
-        })
+        // menuHamburger.addEventListener('click',()=>{
+        // navLinks.classList.toggle('mobile-menu')
+        // })
         AOS.init();
 </script>
 </body>

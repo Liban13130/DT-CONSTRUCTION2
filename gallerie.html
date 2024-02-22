@@ -25,22 +25,30 @@
 </head>
 <body>
 
-    <nav class="navbar">
-        <div class="nav-links">
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="index.html#service">Services</a></li>
-                <li><a href="gallerie.html">Gallerie</a></li>
-                <li><a href="index.html#infos">Contact</a></li>
-            </ul>
+    <header>
+  <nav class="navigation">
+        
+        <!-- <div class="logo"><a href="#">DT Construction</a></div> -->
+        <ul class="menu-liste">
+            <div class="icon cancel-btn">
+                <i class="fas fa-times"></i>
+            </div>
+            <li><a class="li" href="index.html#accueil">Accueil</a></li>
+            <li><a class="li" href="index.html#service">Services</a></li>
+            <li><a class="li" href="gallerie.html">Gallerie</a></li>
+            <li><a class="li" href="index.html#infos">Contact</a></li>
+        </ul>
+        <div class="icon menu-btn">
+            <i class="fas fa-bars"></i>
         </div>
-        <img src="images/menu-burger.png" alt="Menu hamburger" class="menu-burger">
-    </nav>
+</nav>
+    </header>
+  
 
     
-        <h1>Gallerie</h1>
-        
-        <section class="gallery">
+
+    <h1>Gallerie</h1>
+<section class="gallery">
             <a href="images/image-4.jpg">
                 <img src="images/image-4.jpg" alt="">
                 <p>Mon titre</p>
@@ -111,7 +119,7 @@
                     <li><a href="index.html">Accueil</a></li>
                     <li id="li-deux"><a href="index.html#service">Service</a></li>
                     <li><a href="gallerie.html">Gallerie</a></li>
-                    <li><a href="index.html#about">Qui sommes nous</a></li>
+                    <li><a href="index.html#about">À propos</a></li>
                 </ul>
                 <div class="icon">
                     <img src="images/social-media.png" alt="">
@@ -123,18 +131,48 @@
 
 
 
-    <script>
+        <script>
 
-        const menuHamburger = document.querySelector(".menu-burger")
-        const navLinks = document.querySelector(".nav-links")
- 
-        menuHamburger.addEventListener('click',()=>{
-        navLinks.classList.toggle('mobile-menu')
-        })
-        AOS.init();
-
-        lightGallery(document.querySelector(".gallery"))
-</script>
+            const body = document.querySelector("body");
+            const liste = document.querySelectorAll("a.li")
+            const navigation = document.querySelector(".navigation");
+            const menu = document.querySelector(".menu-liste");
+            const menuBtn = document.querySelector(".menu-btn");
+            const cancelBtn = document.querySelector(".cancel-btn");
+    
+            menuBtn.onclick = () => {
+                menu.classList.add("active");
+                menuBtn.classList.add("hide");
+                body.classList.add("disabledScroll");
+            }
+    
+            cancelBtn.onclick = () => {
+                menu.classList.remove("active");
+                menuBtn.classList.remove("hide");
+                body.classList.remove("disabledScroll");
+            }
+    
+            window.onscroll = () => {
+                if(this.scrollY > 20){
+                    navigation.classList.add("sticky")
+                    liste.style.color = "white"
+                }else{
+                    navigation.classList.remove("sticky");
+                    liste.style.color = "#05202b"
+    
+                }
+                // this.scrollY > 20 ? navigation.classList.add("sticky") : navigation.classList.remove("sticky");
+            }
+    
+            // const menuHamburger = document.querySelector(".menu-burger")
+            // const navLinks = document.querySelector(".nav-links")
+     
+            // menuHamburger.addEventListener('click',()=>{
+            // navLinks.classList.toggle('mobile-menu')
+            // })
+            AOS.init();
+            lightGallery(document.querySelector(".gallery"))
+    </script>
 </body>
 </html>
 
