@@ -23,7 +23,7 @@ body{
 .contenu{
   max-width: 1250px;
   margin: auto;
-  padding: 0 30px;
+  /* padding: 0 30px; */
 }
 
 .navigation{
@@ -108,7 +108,7 @@ body{
   .navigation .menu-liste{
     position: fixed;
     top: 0;
-    left: -100%;
+    left: 200%;
     background: #222;
     height: 100vh;
     width: 100vh;
@@ -138,6 +138,16 @@ body{
     justify-content: flex-end;
 }
 }
+
+@media screen and (max-width: 600px){
+  .contenu{
+    width: 0;
+    margin: auto;
+    padding: 0;
+  }
+}
+
+
 
 
 
@@ -246,6 +256,11 @@ body{
 }
 
 
+/* RESPONSIVE */
+@media screen and (max-width: 390px){
+
+}
+
 
 /* ACCUEIL */
 .sec1{
@@ -264,128 +279,125 @@ body{
     width: 500px;
 }
 
+@media screen and (max-width: 590px){
+  .sec1 img.logo{
+    width: 90%;
+  }
+  }
+
 
 
 
 /* SECTION 2 : NOS SERVICES */
-main{
-  height: 100vh;
+.sec2{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
 }
-.section-header{
-  text-align: center;
-  margin-bottom: 30px;
-  margin-top: 15px;
+
+.sec2 h1{
+  font-weight: 300;
+  font-size: 3em;
+  margin: 50px 0;
 }
 
-.section-header p{
-  font-size: 18px;
+.sec2 .contenu{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
-.single-service{
-  border: 1px solid #ebebeb;
-  text-align: center;
-  background: rgb(255, 255, 255);
-  margin: 30px;
-}
-
-.service-bg{
-  height: 200px;
+.sec2 .contenu .card{
   position: relative;
-}
-
-.service-bg-1{
-  background: url(images/homme-faisant-service-nettoyage-domicile-professionnel.jpg);
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-position: center;
-}
-
-.service-bg-2{
-  background: url(images/bricoleur-chantier-construction-train-percer-mur-perforateur.jpg);
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-position: center;
-}
-
-.service-bg-3{
-  background: url(images/excavator-digging-day-light-outdoors.jpg);
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-position: center;
-}
-
-.service-bg-4{
-  background: url(images/renovation-banque-image.jpg);
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-position: center;
-}
-
-.service-bg-5{
-  background: url(images/FACADE.jpg);
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-position: center;
-}
-
-.service-bg h2{
-  color: #fff;
-  background: #05202b;
-  border: 1px solid #05202b;
-  font-size: 17px;
-  text-align: center;
-  font-weight: 700;
-  padding: 15px;
-  position: absolute;
-  left: 8%;
-  width: 84%;
-  margin: 0;
-  bottom: -25px;
-  border-radius: 50px;
-  letter-spacing: 2px;
-}
-
-.single-service:hover .service-bg h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 460px;
   background: #fff;
-  transition: .9s;
+  border-radius: 10px;
+  width: 350px;
+  margin: 50px 10px;
+}
+
+.sec2 .contenu .card h2{
+  transition: 0.5s;
+  position: absolute;
+  background-color: #05202b;
+  width: 84%;
+  text-align: center;
+  border-radius: 50px;
+  font-weight: 400;
+  padding: 8px;
+  color: white;
+}
+
+.sec2 .contenu .card:hover h2{
+  background-color: #ffffff;
   color: #05202b;
 }
 
-.service-text{
-  padding: 50px 30px 20px;
-  font-size: 15px;
-  font-weight: 400;
+.sec2 .contenu .card .block-top {
+  border-radius: 10px 10px 0 0;
+  height: 50%;
+  width: 100%;
 }
 
-.service-text p:last-child{
-  margin: 0;
-  line-height: 1.8;
+.sec2 .contenu .card .service-1{
+  background: url(images/homme-faisant-service-nettoyage-domicile-professionnel.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
-.btn-area{
-  display: inline-block;
-  color: #333;
-  font-size: 17px;
-  font-weight: 700;
-  margin-top: 30px;
-  text-transform: capitalize;
+.sec2 .contenu .card .service-2{
+  background: url(images/bricoleur-chantier-construction-train-percer-mur-perforateur.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
-@media screen and (max-width: 767px){
-  .single-service{
-    margin-top: 30px;
-  }
-
-  .service-bg h2{
-    font-size: 13px;
-  }
+.sec2 .contenu .card .service-3{
+  background: url(images/excavator-digging-day-light-outdoors.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
+.sec2 .contenu .card .service-4{
+  background: url(images/renovation-banque-image.jpg);
+  background-size: cover;
+  background-position: center;
+}
 
+.sec2 .contenu .card .service-5{
+  background: url(images/FACADE.jpg);
+  background-size: cover;
+  background-position: center;
+}
 
+.sec2 .contenu .card .block-bottom{
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.5s;
+}
 
+.sec2 .contenu .card:hover .block-bottom{
+  background: #05202b;
+  color: white;
+  border-radius: 0 0 10px 10px;
+}
 
+.sec2 .contenu .card .block-bottom p{
+  width: 90%;
+  text-align: center;
+  line-height: 21px;
+}
 
 
 
@@ -512,7 +524,7 @@ main{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 352px 0 112px 0;
+  padding: 100px 0 200px 0;
 }
 
 .sec3 .block img{
@@ -647,6 +659,11 @@ main{
   color: white;
 }
 
+@media screen and (max-width: 790px){
+  #infos .container .bloc{
+    margin: 15px 10px;
+  }
+}
 
 
 
@@ -865,3 +882,134 @@ footer .right img{
   
   
   */
+
+
+
+
+
+
+
+
+
+
+  /* STYLE CARTE BOOTSTRAP */
+  /*
+  
+main{
+  height: 100vh;
+  width: 100%;
+}
+
+main .container{
+  height: 100vh;
+  width: 100%;
+}
+.section-header{
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 15px;
+}
+
+.section-header p{
+  font-size: 18px;
+}
+
+.single-service{
+  border: 1px solid #ebebeb;
+  text-align: center;
+  background: rgb(255, 255, 255);
+  margin: 30px;
+}
+
+.service-bg{
+  height: 200px;
+  position: relative;
+}
+
+.service-bg-1{
+  background: url(images/homme-faisant-service-nettoyage-domicile-professionnel.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.service-bg-2{
+  background: url(images/bricoleur-chantier-construction-train-percer-mur-perforateur.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.service-bg-3{
+  background: url(images/excavator-digging-day-light-outdoors.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.service-bg-4{
+  background: url(images/renovation-banque-image.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.service-bg-5{
+  background: url(images/FACADE.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.service-bg h2{
+  color: #fff;
+  background: #05202b;
+  border: 1px solid #05202b;
+  font-size: 17px;
+  text-align: center;
+  font-weight: 700;
+  padding: 15px;
+  position: absolute;
+  left: 8%;
+  width: 84%;
+  margin: 0;
+  bottom: -25px;
+  border-radius: 50px;
+  letter-spacing: 2px;
+}
+
+.single-service:hover .service-bg h2{
+  background: #fff;
+  transition: .9s;
+  color: #05202b;
+}
+
+.service-text{
+  padding: 50px 30px 20px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.service-text p:last-child{
+  margin: 0;
+  line-height: 1.8;
+}
+
+.btn-area{
+  display: inline-block;
+  color: #333;
+  font-size: 17px;
+  font-weight: 700;
+  margin-top: 30px;
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 767px){
+  .single-service{
+    margin-top: 30px;
+  }
+
+  .service-bg h2{
+    font-size: 13px;
+  }
+}
