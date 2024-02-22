@@ -267,7 +267,134 @@ body{
 
 
 
-/* SECTION 2 */
+/* SECTION 2 : NOS SERVICES */
+main{
+  height: 100vh;
+  width: 100%;
+}
+.section-header{
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 15px;
+}
+
+.section-header p{
+  font-size: 18px;
+}
+
+.single-service{
+  border: 1px solid #ebebeb;
+  text-align: center;
+  background: rgb(255, 255, 255);
+  margin: 30px;
+}
+
+.service-bg{
+  height: 200px;
+  position: relative;
+}
+
+.service-bg-1{
+  background: url(images/homme-faisant-service-nettoyage-domicile-professionnel.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.service-bg-2{
+  background: url(images/bricoleur-chantier-construction-train-percer-mur-perforateur.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.service-bg-3{
+  background: url(images/excavator-digging-day-light-outdoors.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.service-bg-4{
+  background: url(images/renovation-banque-image.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.service-bg-5{
+  background: url(images/FACADE.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.service-bg h2{
+  color: #fff;
+  background: #05202b;
+  border: 1px solid #05202b;
+  font-size: 17px;
+  text-align: center;
+  font-weight: 700;
+  padding: 15px;
+  position: absolute;
+  left: 8%;
+  width: 84%;
+  margin: 0;
+  bottom: -25px;
+  border-radius: 50px;
+  letter-spacing: 2px;
+}
+
+.single-service:hover .service-bg h2{
+  background: #fff;
+  transition: .9s;
+  color: #05202b;
+}
+
+.service-text{
+  padding: 50px 30px 20px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.service-text p:last-child{
+  margin: 0;
+  line-height: 1.8;
+}
+
+.btn-area{
+  display: inline-block;
+  color: #333;
+  font-size: 17px;
+  font-weight: 700;
+  margin-top: 30px;
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 767px){
+  .single-service{
+    margin-top: 30px;
+  }
+
+  .service-bg h2{
+    font-size: 13px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 .sec2{
   overflow: hidden;
@@ -382,40 +509,38 @@ body{
 
 /* A PROPOS */
 .sec3{
-  height: 700px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  padding: 100px 0 200px 0;
+  padding: 352px 0 112px 0;
 }
 
-.sec3 .container img{
+.sec3 .block img{
   width: 200px;
   border-radius: 10px;
   margin: 130px 0 50px 0;
 }
 
-.sec3 .container .title{
+.sec3 .block .title{
   font-size: 3em;
   text-align: center;
 }
 
-.sec3 .container{
+.sec3 .block{
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
 }
 
-.sec3 .container .texte{
+.sec3 .block .texte{
   width: 700px;
   line-height: 28px;
   padding: 50px 0;
   text-align: center;
 }
 
-.sec3 .container button{
+.sec3 .block button{
   margin: 100px 0;
   padding: 22px;
   font-size: 17px;
@@ -428,14 +553,14 @@ body{
   transition: 0.4s;
 }
 
-.sec3 .container button:hover{
+.sec3 .block button:hover{
   box-shadow: 0 65px 90px -55px #565656;
   transform: translateY(-5px);
   color: #ffffff;
   background-color: #05202b;
 }
 
-.sec3 .container button a:hover{
+.sec3 .block button a:hover{
   box-shadow: 0 65px 90px -55px #565656;
   transform: translateY(-5px);
   color: #ffffff;
@@ -444,21 +569,21 @@ body{
 
 /* RESPONSIVE */
 @media screen and (max-width: 820px){
-  .sec3 .container .texte{
+  .sec3 .block .texte{
     width: 90%;
 
   }
 }
 
 @media screen and (max-width: 570px){
-  .sec3 .container .title {
+  .sec3 .block .title {
     font-size: 2.1em;
     text-align: center;
 }
 }
 
 @media screen and (max-width: 410px){
-  .sec3 .container .title {
+  .sec3 .block .title {
     font-size: 1.9em;
     text-align: center;
 }
