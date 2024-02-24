@@ -160,7 +160,7 @@ h1{
   color: white;
 }
 .gallery{
-  columns: 5 400px;
+  columns: 3 400px;
   overflow: hidden;
   display: inline-block;
   text-align: center;
@@ -186,7 +186,7 @@ a{
 }
 
 .gallery img:hover{
-  transform: scale(1.02);
+  transform: scale(1.008);
 }
 
 .gallery p{
