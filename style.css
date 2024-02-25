@@ -152,8 +152,9 @@ body{
 .sec1{
     min-height: 100vh;
     height: -webkit-fill-available-;
-    background-image: url(images/istoke.jpg);
+    background-image: url(images/chantier.jpg);
     background-size: cover;
+    background-position: top;
     display: flex;
     flex-direction: column;
     justify-content: center;
