@@ -283,7 +283,6 @@ body{
   width: 90%;
   text-align: center;
   line-height: 21px;
-  padding-bottom: 20px;
 }
 
 
@@ -398,7 +397,6 @@ body{
   margin: 30px 10px 0 0;
   background-color: #05202b;
   transition: 0.3s;
-  cursor: pointer;
 }
 
 #infos .container .bloc:hover{
